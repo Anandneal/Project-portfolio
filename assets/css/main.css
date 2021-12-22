@@ -1,0 +1,314 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif, arial;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h3{
+  text-align: center;
+
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background-color: #5c01d3;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  color: #4beaef;
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header,
+.hero-design {
+  display: none;
+}
+
+nav li:hover {
+  -ms-transform: scale(1.5); /* IE 9 /
+  -webkit-transform: scale(1.5); / Safari 3-8 */
+  transform: scale(1.5);
+}
+.hero {
+  background-color: #6700ee;
+  -webkit-columns: white;
+  columns: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #da1ba9;
+}
+
+.skills-container h1 {
+  position: flex;
+  flex-direction: column;
+  width:100%;
+
+}
+#skills-1 {
+  font-size: 40px;
+  position: relative;
+  right: 325px;
+  bottom: 33px;
+}
+#portfolio-1 {
+  font-size: 40px;
+  position: relative;
+
+}
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+  padding: 0;
+  display: grid;
+}
+
+.featured:before {
+  content: "";
+  background-image: url(../img/neal.jpeg);
+  background-size: 100% 100%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #da1ba9;
+  font-size: 0.85em;
+}
+
+.about {
+  display: grid;
+  grid: 1fr/ 1fr 50%;
+  margin: 50px;
+}
+
+.about-me {
+  color: #da1ba9;
+}
+
+.featured-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -0.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: #252525;
+  margin-bottom: 3em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills-container {
+  background-color: #da1ba9;
+  display: flex;
+  flex-direction: column;
+}
+
+.pre-skill {
+  display: flex;
+}
+
+.skill {
+  background-color: white;
+  flex: 1;
+  margin: 10px;
+  border-radius: 7%;
+}
+
+.skills-container .icon-container {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.icon-container {
+  width: 50px;
+}
+
+.skills-container ul li .skill-title {
+  font-weight: bold;
+}
+
+.skills-container ul li .featured-desc {
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  background-color: white;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+.footer {
+  display: flex;
+  place-content: center;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 800px) {
+  .featured,
+  .portfolio {
+    text-align: left;
+  }
+  .portfolio-container {
+    display: grid;
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+  }
+  .portfolio-left {
+    display: grid;
+    display: grid;
+    place-content: center;
+  }
+
+  .js-img {
+    width: 50px;
+  }
+
+  .comp-img {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+    grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background-color: #5c01d3;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header ul img {
+    width: 20px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+    grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #6700ee;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-left: -50%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
